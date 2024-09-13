@@ -12,7 +12,7 @@ MLBB Items Trivia is a web-based quiz game that tests players' knowledge of Mobi
 
 ## How to Play (Hosted on GitHub Pages)
 
-1. Open the game at [MLBB Items Trivia](https://balzabu.github.io/mlbb-items-trivia/).
+1. Open the game at [MLBB Items Trivia](https://balzabu.github.io/MLBB-Items-Trivia/).
 2. Choose between ENDLESS (EASY) or ENDLESS (HARD) mode.
 3. In EASY mode, select the correct statistic or passive ability for the displayed item.
 4. In HARD mode, select the correct item for the displayed statistic or passive ability.
