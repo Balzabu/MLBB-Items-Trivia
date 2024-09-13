@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#game-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mode-selection {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#game-area {
+    text-align: center;
+}
+
+#item-display {
+    margin-bottom: 1rem;
+}
+
+#item-display img {
+    max-width: 100px;
+    height: auto;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.option {
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+}
+
+#score {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    #mode-selection {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+#game-over {
+    text-align: center;
+}
+
+#game-over h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#game-over p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#play-again {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+}
+
+@keyframes correct-answer {
+    0% { background-color: #f0f0f0; }
+    50% { background-color: #4CAF50; }
+    100% { background-color: #f0f0f0; }
+}
+
+@keyframes wrong-answer {
+    0% { background-color: #f0f0f0; }
+    50% { background-color: #F44336; }
+    100% { background-color: #f0f0f0; }
+}
+
+.correct {
+    animation: correct-answer 1s;
+}
+
+.wrong {
+    animation: wrong-answer 1s;
+}
+
+#game-area, #game-over {
+    display: none;
+}

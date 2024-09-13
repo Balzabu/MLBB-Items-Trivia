@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Items Trivia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MLBB Items Trivia</h1>
+    </header>
+    <main>
+        <div id="game-container">
+            <div id="mode-selection">
+                <button id="easy-mode">ENDLESS (EASY)</button>
+                <button id="hard-mode">ENDLESS (HARD)</button>
+            </div>
+            <div id="game-area" style="display: none;">
+                <div id="item-display"></div>
+                <div id="options-container"></div>
+                <div id="score">Score: <span id="score-value">0</span></div>
+            </div>
+            <div id="game-over" style="display: none;">
+                <h2>Game Over</h2>
+                <p>Your final score: <span id="final-score"></span></p>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Aggiungi questi elementi audio alla fine del body -->
+    <audio id="correct-sound" src="./assets/sounds/success.mp3"></audio>
+    <audio id="wrong-sound" src="./assets/sounds/error.mp3"></audio>
+    <audio id="gameover-sound" src="./assets/sounds/gameover.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
